@@ -1,0 +1,6 @@
+main: net.cyberflame.rankguitest.Main
+name: RankGUITest
+version: 1
+
+commands:
+  rank:
