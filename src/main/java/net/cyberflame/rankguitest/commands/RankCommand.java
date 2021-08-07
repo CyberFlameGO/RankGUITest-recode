@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 
-public class TestCommand implements CommandExecutor
+public class RankCommand implements CommandExecutor
 {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {

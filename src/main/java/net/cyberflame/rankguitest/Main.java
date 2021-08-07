@@ -1,6 +1,6 @@
 package net.cyberflame.rankguitest;
 
-import net.cyberflame.rankguitest.commands.TestCommand;
+import net.cyberflame.rankguitest.commands.RankCommand;
 import net.cyberflame.rankguitest.listeners.InventoryClickListener;
 import net.cyberflame.rankguitest.ui.TestUI;
 import org.bukkit.Bukkit;
@@ -11,7 +11,7 @@ public class Main extends JavaPlugin
     @Override
     public void onEnable()
     {
-        this.getCommand("testcommand").setExecutor(new TestCommand());
+        this.getCommand("rank").setExecutor(new RankCommand());
         Bukkit.getPluginManager().registerEvents(new InventoryClickListener(), this);
         TestUI.initialize();
     }
