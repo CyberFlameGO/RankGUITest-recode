@@ -10,19 +10,9 @@ import org.bukkit.entity.Player;
 
 public class TestCommand implements CommandExecutor
 {
-    private final Main plugin;
-
-    public TestCommand(Main plugin)
-    {
-        this.plugin = plugin;
-
-        plugin.getCommand("rank").setExecutor(this);
-    }
-
-
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
-        if (! (sender instanceof Player))
+        if (!(sender instanceof Player))
             {
                 sender.sendMessage("You can't execute this from the console");
                 return true;

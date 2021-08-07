@@ -8,9 +8,18 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin
 {
+    private static Main plugin;
+
+    public static Main getPlugin()
+    {
+        return plugin;
+    }
+
+    @Override
     public void onEnable() {
-        this.getCommand("testcommand").setExecutor(new TestCommand(this));
-        Bukkit.getPluginManager().registerEvents(new InventoryClickListener(this), this);
+        plugin = this;
+        this.getCommand("testcommand").setExecutor(new TestCommand());
+        Bukkit.getPluginManager().registerEvents(new InventoryClickListener(), this);
         TestUI.initialize();
     }
 }

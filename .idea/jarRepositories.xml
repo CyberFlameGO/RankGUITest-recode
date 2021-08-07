@@ -27,6 +27,11 @@
       <option name="url" value="https://repo.codemc.io/repository/nms/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="code-mc" />
+      <option name="name" value="code-mc" />
+      <option name="url" value="https://repo.codemc.io/repository/nms/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Maven Central repository" />
       <option name="url" value="https://repo1.maven.org/maven2" />
@@ -40,6 +45,16 @@
       <option name="id" value="paper" />
       <option name="name" value="paper" />
       <option name="url" value="https://destroystokyo.com/repo/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="paper-mc" />
+      <option name="name" value="paper-mc" />
+      <option name="url" value="https://papermc.io/repo/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="sonatype-snapshots" />
+      <option name="name" value="sonatype-snapshots" />
+      <option name="url" value="https://oss.sonatype.org/content/repositories/snapshots" />
     </remote-repository>
   </component>
 </project>
