@@ -13,17 +13,10 @@ public class TestUI
     public static Inventory inv;
     public static String inventory_name;
     public static int inv_horizontal = 6;
-    public static int rows = inv_horizontal * 9 - 1;
-
-    public static void initialize() {
-        inventory_name = Utils.chat("&b&lRank gui");
-
-        inv = Bukkit.createInventory(null, inv_horizontal);
-    }
-
+    public static int slots = inv_horizontal * 9 - 1;
 
     public static Inventory GUI(Player player) {
-        Inventory toReturn = Bukkit.createInventory(null, inv_horizontal, inventory_name);
+        Inventory toReturn = Bukkit.createInventory(player, slots, inventory_name);
 
         if (player.hasPermission("abc.23"))
             {
