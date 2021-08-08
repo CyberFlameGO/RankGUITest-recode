@@ -13,6 +13,5 @@ public class Main extends JavaPlugin
     {
         this.getCommand("rank").setExecutor(new RankCommand());
         Bukkit.getPluginManager().registerEvents(new InventoryClickListener(), this);
-        TestUI.initialize();
     }
 }
