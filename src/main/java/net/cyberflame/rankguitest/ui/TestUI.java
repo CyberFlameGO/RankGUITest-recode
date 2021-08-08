@@ -13,12 +13,12 @@ public class TestUI
     public static Inventory inv;
     public static String inventory_name;
     public static int inv_horizontal = 6;
-    public static int slots = inv_horizontal * 9 - 1;
+    public static int slots = inv_horizontal * 9;
 
     public static void uiInit() {
         inventory_name = Utils.chat("&b&lRank GUI");
 
-        inv = Bukkit.createInventory(null, inv_horizontal);
+        inv = Bukkit.createInventory(null, slots, inventory_name);
     }
 
     public static Inventory GUI(Player player) {

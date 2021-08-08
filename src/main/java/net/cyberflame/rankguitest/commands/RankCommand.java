@@ -20,7 +20,7 @@ public class RankCommand implements CommandExecutor
 
         Player player = (Player) sender;
 
-        if (sender.hasPermission("abc.23"))
+        if (player.hasPermission("abc.23"))
             {
                 player.openInventory(TestUI.GUI(player));
             }

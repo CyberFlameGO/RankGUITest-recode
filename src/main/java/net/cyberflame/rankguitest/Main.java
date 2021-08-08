@@ -11,6 +11,7 @@ public class Main extends JavaPlugin
     @Override
     public void onEnable()
     {
+        TestUI.uiInit();
         this.getCommand("rank").setExecutor(new RankCommand());
         Bukkit.getPluginManager().registerEvents(new InventoryClickListener(), this);
     }
